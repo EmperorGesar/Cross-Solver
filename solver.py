@@ -114,41 +114,41 @@ class Solver:
 
         for t in available:
             if t == 'R':
-                s, _, c = self.hand.R(state)
+                s, c = self.hand.R(state)
             elif t == 'R\'':
-                s, _, c = self.hand.Rp(state)
+                s, c = self.hand.Rp(state)
             elif t == 'R2':
-                s, _, c = self.hand.R2(state)
+                s, c = self.hand.R2(state)
             elif t == 'U':
-                s, _, c = self.hand.U(state)
+                s, c = self.hand.U(state)
             elif t == 'U\'':
-                s, _, c = self.hand.Up(state)
+                s, c = self.hand.Up(state)
             elif t == 'U2':
-                s, _, c = self.hand.U2(state)
+                s, c = self.hand.U2(state)
             elif t == 'F':
-                s, _, c = self.hand.F(state)
+                s, c = self.hand.F(state)
             elif t == 'F\'':
-                s, _, c = self.hand.Fp(state)
+                s, c = self.hand.Fp(state)
             elif t == 'F2':
-                s, _, c = self.hand.F2(state)
+                s, c = self.hand.F2(state)
             elif t == 'L':
-                s, _, c = self.hand.L(state)
+                s, c = self.hand.L(state)
             elif t == 'L\'':
-                s, _, c = self.hand.Lp(state)
+                s, c = self.hand.Lp(state)
             elif t == 'L2':
-                s, _, c = self.hand.L2(state)
+                s, c = self.hand.L2(state)
             elif t == 'D':
-                s, _, c = self.hand.D(state)
+                s, c = self.hand.D(state)
             elif t == 'D\'':
-                s, _, c = self.hand.Dp(state)
+                s, c = self.hand.Dp(state)
             elif t == 'D2':
-                s, _, c = self.hand.D2(state)
+                s, c = self.hand.D2(state)
             elif t == 'B':
-                s, _, c = self.hand.B(state)
+                s, c = self.hand.B(state)
             elif t == 'B\'':
-                s, _, c = self.hand.Bp(state)
+                s, c = self.hand.Bp(state)
             else:
-                s, _, c = self.hand.B2(state)
+                s, c = self.hand.B2(state)
             successors.append([s, [t], c])
 
         return successors

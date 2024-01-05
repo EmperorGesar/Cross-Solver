@@ -334,104 +334,104 @@ class CrossAI(Hand):
         pos = self.get_pos(state)
         c = 5 - len([v for v in pos if v in self.r])
         s = self.turn(state, self.r, 0)
-        return s, ['R'], c
+        return s, c
 
     def Rp(self, state):
         pos = self.get_pos(state)
         c = 5 - len([v for v in pos if v in self.r])
         s = self.turn(state, self.r, 1)
-        return s, ['R\''], c
+        return s, c
 
     def U(self, state):
         pos = self.get_pos(state)
         c = 5 - len([v for v in pos if v in self.u])
         s = self.turn(state, self.u, 0)
-        return s, ['U'], c
+        return s, c
 
     def Up(self, state):
         pos = self.get_pos(state)
         c = 5 - len([v for v in pos if v in self.u])
         s = self.turn(state, self.u, 1)
-        return s, ['U\''], c
+        return s, c
 
     def F(self, state):
         pos = self.get_pos(state)
         c = 5 - len([v for v in pos if v in self.f])
         s = self.turn(state, self.f, 0)
         s = self.reset_color_edge(s, self.f)
-        return s, ['F'], c
+        return s, c
 
     def Fp(self, state):
         pos = self.get_pos(state)
         c = 5 - len([v for v in pos if v in self.f])
         s = self.turn(state, self.f, 1)
         s = self.reset_color_edge(s, self.f)
-        return s, ['F\''], c
+        return s, c
 
     def L(self, state):
         pos = self.get_pos(state)
         c = 5 - len([v for v in pos if v in self.l])
         s = self.turn(state, self.l, 0)
-        return s, ['L'], c
+        return s, c
 
     def Lp(self, state):
         pos = self.get_pos(state)
         c = 5 - len([v for v in pos if v in self.l])
         s = self.turn(state, self.l, 1)
-        return s, ['L\''], c
+        return s, c
 
     def D(self, state):
         pos = self.get_pos(state)
         c = 5 - len([v for v in pos if v in self.d])
         s = self.turn(state, self.d, 0)
-        return s, ['D'], c
+        return s, c
 
     def Dp(self, state):
         pos = self.get_pos(state)
         c = 5 - len([v for v in pos if v in self.d])
         s = self.turn(state, self.d, 1)
-        return s, ['D\''], c
+        return s, c
 
     def B(self, state):
         pos = self.get_pos(state)
         c = 5 - len([v for v in pos if v in self.b])
         s = self.turn(state, self.b, 1)
         s = self.reset_color_edge(s, self.b)
-        return s, ['B'], c
+        return s, c
 
     def Bp(self, state):
         pos = self.get_pos(state)
         c = 5 - len([v for v in pos if v in self.b])
         s = self.turn(state, self.b, 0)
         s = self.reset_color_edge(s, self.b)
-        return s, ['B'], c
+        return s, c
 
     def R2(self, state):
-        s, _, _ = self.R(state)
-        s, _, c = self.R(s)
-        return s, ['R2'], c
+        s, _ = self.R(state)
+        s, c = self.R(s)
+        return s, c
 
     def U2(self, state):
-        s, _, _ = self.U(state)
-        s, _, c = self.U(s)
-        return s, ['U2'], c
+        s, _ = self.U(state)
+        s, c = self.U(s)
+        return s, c
 
     def F2(self, state):
-        s, _, _ = self.F(state)
-        s, _, c = self.F(s)
-        return s, ['F2'], c
+        s, _ = self.F(state)
+        s, c = self.F(s)
+        return s, c
 
     def L2(self, state):
-        s, _, _ = self.L(state)
-        s, _, c = self.L(s)
-        return s, ['L2'], c
+        s, _ = self.L(state)
+        s, c = self.L(s)
+        return s, c
 
     def D2(self, state):
-        s, _, _ = self.D(state)
-        s, _, c = self.D(s)
-        return s, ['D2'], c
+        s, _ = self.D(state)
+        s, c = self.D(s)
+        return s, c
 
     def B2(self, state):
-        s, _, _ = self.B(state)
-        s, _, c = self.B(s)
-        return s, ['B2'], c
+        s, _ = self.B(state)
+        s, c = self.B(s)
+        return s, c
