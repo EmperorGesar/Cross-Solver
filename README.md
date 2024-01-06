@@ -1,5 +1,5 @@
 # Cross Solver
-An interactive Rubik's cube with the cross-solving prompts of the CFOP method
+An interactive Rubik's cube with the prompts of the cross-solving of the CFOP method
 
 ## Demo
 ![demo](https://github.com/EmperorGesar/Cross-Solver/assets/50392401/784d863c-2d8b-49f9-8a9e-a845f46ead0c)
